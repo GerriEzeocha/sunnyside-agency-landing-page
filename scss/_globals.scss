@@ -17,3 +17,9 @@ body {
 h1,h2,h3,h4 {
     font-family: 'Fraunces', serif;
 }
+
+.container {
+    height: 100vh;
+    display: grid;
+   grid-template-rows: auto;
+}
