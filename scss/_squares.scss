@@ -1,0 +1,67 @@
+.squares {
+    flex: 1;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    min-height: 80%;
+   
+}
+
+.textSquare {
+        padding: 1rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 3rem;
+
+    .textSquare_title{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .textSquare_text {
+        color: $dGrayBlue;
+    }
+}
+
+.transformRow, .standoutRow, .gdPhotoRow {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 27rem;
+}
+
+.transformRow {
+    grid-row: 1;
+    
+    .transformRow_image {
+        background: url(/images/desktop/image-transform.jpg) no-repeat center center /cover;
+    }
+}
+.standoutRow {
+    grid-row: 2;
+
+    .standoutRow_image {
+        background: url(/images/desktop/image-stand-out.jpg) no-repeat center center /cover;
+    }
+}
+
+.gdPhotoRow {
+    grid-row: 3;
+
+    .graphicDesign {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        background: url(/images/desktop/image-graphic-design.jpg)no-repeat center center /cover;
+    }
+
+    .photography {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        background: url(/images/desktop/image-photography.jpg)no-repeat center center /cover;
+    }
+}

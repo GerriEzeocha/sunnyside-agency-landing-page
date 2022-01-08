@@ -21,14 +21,20 @@ h1, h2, h3, h4 {
 }
 
 .container {
-  height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .headerRow {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,5 +126,111 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   margin: 3rem 0;
+}
+
+.squares {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  min-height: 80%;
+}
+
+.textSquare {
+  padding: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3rem;
+}
+
+.textSquare .textSquare_title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.textSquare .textSquare_text {
+  color: #818498;
+}
+
+.transformRow, .standoutRow, .gdPhotoRow {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: 27rem;
+}
+
+.transformRow {
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.transformRow .transformRow_image {
+  background: url(/images/desktop/image-transform.jpg) no-repeat center center/cover;
+}
+
+.standoutRow {
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.standoutRow .standoutRow_image {
+  background: url(/images/desktop/image-stand-out.jpg) no-repeat center center/cover;
+}
+
+.gdPhotoRow {
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.gdPhotoRow .graphicDesign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: url(/images/desktop/image-graphic-design.jpg) no-repeat center center/cover;
+}
+
+.gdPhotoRow .photography {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: url(/images/desktop/image-photography.jpg) no-repeat center center/cover;
 }
 /*# sourceMappingURL=styles.css.map */

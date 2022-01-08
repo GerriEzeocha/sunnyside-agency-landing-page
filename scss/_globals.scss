@@ -19,7 +19,9 @@ h1,h2,h3,h4 {
 }
 
 .container {
-    height: 100vh;
-    display: grid;
-   grid-template-rows: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+//     display: grid;
+//    grid-template-rows: auto;
 }
