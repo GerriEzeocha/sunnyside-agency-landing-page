@@ -17,18 +17,45 @@
     .textSquare_title{
         font-size: 2rem;
         font-weight: 600;
+        margin-bottom: 0.35rem;
     }
 
     .textSquare_text {
         color: $dGrayBlue;
+        line-height: 1.5rem;
     }
+     
+    a{
+         text-decoration: none;
+         color: $veryDDBlue;
+         font-family: 'Fraunces', serif;
+         text-transform: uppercase;
+         z-index: 3;
+     }
+
+     .link {
+        width: 8rem;
+        height: 0.5rem;
+        border-radius: 1rem;
+        position: relative;
+        left: -0.4375rem;
+        top: -0.5rem;
+        z-index: 1;
+     }
+    .yellow {
+        background: $yellow;
+    }
+
+    .red {
+        background: $softRed;
+        }
 }
 
 .transformRow, .standoutRow, .gdPhotoRow {
     flex: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 27rem;
+    height: 28rem;
 }
 
 .transformRow {
@@ -63,5 +90,26 @@
         align-items: center;
         justify-content: flex-end;
         background: url(/images/desktop/image-photography.jpg)no-repeat center center /cover;
+    }
+
+    &_title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        font-family: 'Fraunces', serif;
+        margin-bottom: 0.25rem ;
+    }
+
+    .gdesign{
+        color: $ddCyan;
+    }
+    .photo {
+        color: $ddBlue;
+    }
+
+    &_text{
+        width: 22rem;
+        text-align: center;
+        margin-bottom: 3rem;
+        line-height: 1.5rem;
     }
 }

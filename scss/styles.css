@@ -160,10 +160,38 @@ h1, h2, h3, h4 {
 .textSquare .textSquare_title {
   font-size: 2rem;
   font-weight: 600;
+  margin-bottom: 0.35rem;
 }
 
 .textSquare .textSquare_text {
   color: #818498;
+  line-height: 1.5rem;
+}
+
+.textSquare a {
+  text-decoration: none;
+  color: #23303e;
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+.textSquare .link {
+  width: 8rem;
+  height: 0.5rem;
+  border-radius: 1rem;
+  position: relative;
+  left: -0.4375rem;
+  top: -0.5rem;
+  z-index: 1;
+}
+
+.textSquare .yellow {
+  background: #fad400;
+}
+
+.textSquare .red {
+  background: #fe7867;
 }
 
 .transformRow, .standoutRow, .gdPhotoRow {
@@ -174,7 +202,7 @@ h1, h2, h3, h4 {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  height: 27rem;
+  height: 28rem;
 }
 
 .transformRow {
@@ -232,5 +260,94 @@ h1, h2, h3, h4 {
       -ms-flex-pack: end;
           justify-content: flex-end;
   background: url(/images/desktop/image-photography.jpg) no-repeat center center/cover;
+}
+
+.gdPhotoRow_title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: 'Fraunces', serif;
+  margin-bottom: 0.25rem;
+}
+
+.gdPhotoRow .gdesign {
+  color: #25564b;
+}
+
+.gdPhotoRow .photo {
+  color: #19536b;
+}
+
+.gdPhotoRow_text {
+  width: 22rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  line-height: 1.5rem;
+}
+
+.clientsTRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  min-height: 40rem;
+  padding: 2rem;
+}
+
+.clientsTRow_title {
+  padding: 2rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: 'Fraunces', serif;
+  letter-spacing: 0.25rem;
+  color: #a7abae;
+}
+
+.clientsTRow_tests {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  min-height: 28rem;
+}
+
+.clientsTRow .client_tes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.clientsTRow .client_tes_image {
+  width: 5rem;
+  height: 5rem;
+}
+
+.clientsTRow .client_tes_image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.imagesRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=styles.css.map */
