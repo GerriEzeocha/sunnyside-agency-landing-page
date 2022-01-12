@@ -315,6 +315,7 @@ h1, h2, h3, h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 1.2rem;
   padding: 2rem;
   min-height: 28rem;
 }
@@ -345,9 +346,130 @@ h1, h2, h3, h4 {
   border-radius: 50%;
 }
 
+.clientsTRow .client_tes_text {
+  text-align: center;
+  color: #818498;
+  line-height: 1.7rem;
+}
+
+.clientsTRow .client_tes_author {
+  text-align: center;
+}
+
+.clientsTRow .client_tes_author .cta_name {
+  font-family: 'Fraunces', serif;
+  margin-bottom: 0;
+}
+
+.clientsTRow .client_tes_author .cta_title {
+  font-size: 0.9rem;
+  color: #a7abae;
+  margin-top: 0.4rem;
+}
+
 .imagesRow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 18rem;
+}
+
+.imagesRow_pic {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.imagesRow_pic img {
+  width: 100%;
+}
+
+footer {
+  background-color: rgba(98, 208, 186, 0.947);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 2rem;
+  min-height: 18rem;
+}
+
+footer img {
+  margin-top: 2rem 0;
+}
+
+footer .ftr_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+}
+
+footer .ftr_links a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #2C7566;
+}
+
+footer .ftr_links a:hover {
+  color: white;
+}
+
+footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+footer .social a:hover {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+footer .attribution {
+  color: #2C7566;
+  font-size: 0.7rem;
+}
+
+footer .attribution a {
+  text-decoration: none;
+  font-size: 0.7rem;
+  color: #2C7566;
 }
 /*# sourceMappingURL=styles.css.map */

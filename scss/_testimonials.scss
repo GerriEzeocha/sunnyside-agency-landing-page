@@ -17,6 +17,7 @@
 
     &_tests {
         display: flex;
+        gap: 1.2rem;
         padding: 2rem;
         min-height: 28rem;
     }
@@ -36,9 +37,44 @@
                 border-radius: 50%;
             }
         }
+        &_text {
+            text-align: center;
+            color: $dGrayBlue;
+            line-height: 1.7rem;
+        }
+        &_author {
+            text-align: center;
+
+            .cta_name {
+            font-family: 'Fraunces', serif;
+            margin-bottom: 0;
+            }
+
+            .cta_title {
+                font-size: 0.9rem;
+                color: $grayishBlue;
+                margin-top: 0.4rem;
+            }
+        }
     }
 }
 
 .imagesRow {
     display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 18rem;
+
+    &_pic {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+        }
+    }
 }
