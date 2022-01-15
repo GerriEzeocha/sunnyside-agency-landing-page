@@ -5,6 +5,10 @@
     background: url(/images/desktop/image-header.jpg) no-repeat center center /cover;
     padding: 0.5rem;
     min-height: 35rem;
+
+    @include breakpoints(phone){
+        background: url(/images/mobile/image-header.jpg)no-repeat center center /cover;
+    }
 }
 
 .desktopNav {
@@ -41,6 +45,10 @@
             background-color: rgba(255, 255, 255, 0.495);
             color: $white;
         }
+
+        @include breakpoints(tablet){
+            display: none;
+        }
     }
 }
 .hero_section {
@@ -55,5 +63,10 @@
         text-transform: uppercase;
         letter-spacing: 0.4rem;
         margin: 3rem 0;
+
+        @include breakpoints(phone){
+            font-size: 2.5rem;
+            text-align: center;
+        }
     }
 }

@@ -3,6 +3,11 @@
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     min-height: 80%;
+
+    @include breakpoints(phone){
+        display: flex;
+        flex-direction: column;
+    }
    
 }
 
@@ -25,30 +30,51 @@
         line-height: 1.5rem;
     }
      
-    a{
+    .clr_link{
+        display: flex;
+        flex-direction: column;
+        
+        a{
          text-decoration: none;
          color: $veryDDBlue;
          font-family: 'Fraunces', serif;
          text-transform: uppercase;
          z-index: 3;
-     }
-
-     .link {
-        width: 8rem;
-        height: 0.5rem;
-        border-radius: 1rem;
-        position: relative;
-        left: -0.4375rem;
-        top: -0.5rem;
-        z-index: 1;
-     }
-    .yellow {
-        background: $yellow;
-    }
-
-    .red {
-        background: $softRed;
         }
+
+        .link {
+            width: 8rem;
+            height: 0.5rem;
+            border-radius: 1rem;
+            position: relative;
+            left: -0.4375rem;
+            top: -0.5rem;
+            z-index: 1;
+        }
+        .yellow {
+            background: $yellow;
+            align-self: flex-start;
+
+            @include breakpoints(phone){
+                align-self: center;
+            }
+     }
+
+        .red {
+            background: $softRed;
+            align-self: flex-start;
+
+            @include breakpoints(phone){
+                align-self: center;
+            }
+        }
+    }
+    
+
+    @include breakpoints(phone){
+        text-align: center;
+        padding: 0;
+    }    
 }
 
 .transformRow, .standoutRow, .gdPhotoRow {
@@ -56,6 +82,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 28rem;
+
+    @include breakpoints(phone){
+        display: flex;
+        flex-direction: column;
+
+    }
 }
 
 .transformRow {
@@ -63,6 +95,16 @@
     
     .transformRow_image {
         background: url(/images/desktop/image-transform.jpg) no-repeat center center /cover;
+
+        @include breakpoints(phone){
+            min-height: 20rem;
+            background: url(/images/mobile/image-transform.jpg)no-repeat center center /cover;
+        }
+    }
+
+    @include breakpoints(phone){
+        flex: 1;
+        flex-direction: column-reverse;
     }
 }
 .standoutRow {
@@ -70,6 +112,15 @@
 
     .standoutRow_image {
         background: url(/images/desktop/image-stand-out.jpg) no-repeat center center /cover;
+
+         @include breakpoints(phone){
+            min-height: 20rem;
+            background: url(/images/mobile/image-stand-out.jpg)no-repeat center center /cover;
+        }
+    }
+
+     @include breakpoints(phone){
+        flex: 1;
     }
 }
 
@@ -82,6 +133,11 @@
         align-items: center;
         justify-content: flex-end;
         background: url(/images/desktop/image-graphic-design.jpg)no-repeat center center /cover;
+
+        @include breakpoints(phone){
+            min-height: 40rem;
+            background: url(/images/mobile/image-graphic-design.jpg)no-repeat center center /cover;
+        }
     }
 
     .photography {
@@ -90,6 +146,11 @@
         align-items: center;
         justify-content: flex-end;
         background: url(/images/desktop/image-photography.jpg)no-repeat center center /cover;
+            
+        @include breakpoints(phone){
+            min-height: 40rem;
+            background: url(/images/mobile/image-photography.jpg)no-repeat center center /cover;
+        }
     }
 
     &_title {
@@ -111,5 +172,11 @@
         text-align: center;
         margin-bottom: 3rem;
         line-height: 1.5rem;
+    }
+
+    @include breakpoints(phone){
+        // grid-row: 5/6;
+        display: flex;
+        flex-direction: column;
     }
 }
