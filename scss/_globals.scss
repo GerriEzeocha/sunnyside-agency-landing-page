@@ -1,5 +1,7 @@
 html {
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 *, *::after, *::before {
@@ -11,6 +13,7 @@ body {
     max-width: 90rem;
     min-width: 23.4375rem;
     font-family: 'Barlow', sans-serif;
+    flex: 1;
     
 }
 
